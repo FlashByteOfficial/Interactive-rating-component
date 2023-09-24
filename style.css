@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  min-width: 100dvw;
+  user-select: none;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 450px;
+  justify-content: center;
+  align-items: center;
+}
+
+main.flex-container {
+  background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+  border-radius: 25px;
+}
+
+main div.flex-container {
+  align-items: flex-start !important;
+}
+
+.flex-container img {
+  background-color: hsl(213, 19%, 23%);
+  border-radius: 50%;
+  padding: 1.5rem;
+}
+
+.flex-container > h1 {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.flex-container p {
+  color: hsl(217, 12%, 63%);
+  font-size: 1.5rem;
+}
+
+.flex-container input {
+  border-radius: 50px;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  min-width: 100%;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+}
+
+.flex-container input:active {
+  color: hsl(25, 97%, 53%);
+  background: hsl(0, 0%, 100%);
+}
+
+.ratings {
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  flex-shrink: 0;
+}
+
+.flex-container .ratings > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  aspect-ratio: 1;
+  padding: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  border: none;
+}
+
+.flex-container .ratings > button:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+
+.flex-container .ratings > button:active {
+  background-color: hsl(25, 97%, 53%);
+}
+
+/* JS Styling */
+
+.paragraph {
+  color: hsl(25, 97%, 53%) !important;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
+  padding-inline: 1.2rem;
+  padding-block: 0.5rem;
+  font-size: 1.35rem !important;
+}
+
+.btnClick {
+  background-color: hsl(25, 97%, 53%) !important;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+@media (max-width: 350px) {
+  main {
+    width: 350px;
+  }
+
+  .flex-container > p {
+    font-size: 1.35rem;
+  }
+
+  .flex-container > h1 {
+    font-size: 2.5rem;
+  }
+}
